@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "l-radio-group": "/components/lin-ui/radio-group/index",
+    "l-radio": "/components/lin-ui/radio/index"
+  }
+}

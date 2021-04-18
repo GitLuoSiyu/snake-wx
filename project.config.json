@@ -4,17 +4,45 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": true,
-    "es6": true,
+    "urlCheck": false,
+    "es6": false,
+    "enhance": true,
     "postcss": true,
+    "preloadBackgroundData": false,
     "minified": true,
     "newFeature": true,
-    "autoAudits": false
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": false,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.7.0",
-  "appid": "",
-  "projectname": "WX-Snake-%E7%AE%80%E4%B9%A6",
+  "libVersion": "2.16.0",
+  "appid": "wx6be76aef8c2bd5c9",
+  "projectname": "hnhcnj-sleeve",
   "debugOptions": {
     "hidedInDevtools": []
   },
@@ -23,20 +51,115 @@
   "simulatorPluginLibVersion": {},
   "condition": {
     "search": {
-      "current": -1,
       "list": []
     },
     "conversation": {
-      "current": -1,
+      "list": []
+    },
+    "plugin": {
       "list": []
     },
     "game": {
       "currentL": -1,
       "list": []
     },
-    "miniprogram": {
-      "current": -1,
+    "gamePlugin": {
       "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": 0,
+          "name": "pages/detail/detail",
+          "pathName": "pages/detail/detail",
+          "query": "pid=15",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "无规格",
+          "pathName": "pages/detail/detail",
+          "query": "pid=11",
+          "scene": null
+        },
+        {
+          "id": 2,
+          "name": "pages/home/test",
+          "pathName": "pages/test/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/category/category",
+          "pathName": "pages/category/category",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/search/search",
+          "pathName": "pages/search/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/cart/cart",
+          "pathName": "pages/cart/cart",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/home/home",
+          "pathName": "pages/home/home",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 7,
+          "name": "pages/detail/detail",
+          "pathName": "pages/detail/detail",
+          "query": "pid=15",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pay-success",
+          "pathName": "pages/pay-success/pay-success",
+          "query": "pid=15",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/my/my",
+          "pathName": "pages/my/my",
+          "query": "pid=15",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/theme-spu-list/theme-spu-list",
+          "pathName": "pages/theme-spu-list/theme-spu-list",
+          "query": "tname=t-2",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/theme-spu-list/theme-spu-list",
+          "pathName": "pages/theme-spu-list/theme-spu-list",
+          "query": "tname=t-2",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/detail/detail",
+          "pathName": "pages/detail/detail",
+          "query": "id=32",
+          "scene": null
+        }
+      ]
     }
   }
 }

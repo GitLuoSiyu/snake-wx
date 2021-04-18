@@ -1,11 +1,88 @@
 {
   "pages": [
-    "pages/Snake/snake"
+    "pages/home/home",
+    "pages/detail/detail",
+    "pages/cart/cart",
+    "pages/category/category",
+    "pages/my/my",
+    "pages/search/search",
+    "pages/spu-list/spu-list",
+    "pages/order/order",
+    "pages/coupon/coupon",
+    "pages/my-order/my-order",
+    "pages/my-coupon/my-coupon",
+    "pages/theme-spu-list/theme-spu-list"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "鸿程农机官方商城",
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "snake"
+    "onReachBottomDistance": 50
   },
-  "sitemapLocation": "sitemap.json"
+  "tabBar": {
+    "borderStyle": "black",
+    "color": "#333333",
+    "selectedColor": "#333333",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/home/home",
+        "iconPath": "imgs/tabbar/home@dis.png",
+        "selectedIconPath": "imgs/tabbar/home.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "imgs/tabbar/category@dis.png",
+        "selectedIconPath": "imgs/tabbar/category.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "imgs/tabbar/cart@dis.png",
+        "selectedIconPath": "imgs/tabbar/cart.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "imgs/tabbar/my@dis.png",
+        "selectedIconPath": "imgs/tabbar/my.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "l-water-flow": "/components/lin-ui/water-flow/index",
+    "l-grid": "/components/lin-ui/grid/index",
+    "l-grid-item": "/components/lin-ui/grid-item/index",
+    "l-counter": "/components/lin-ui/counter/index",
+    "s-counter": "/components/counter/index",
+    "l-price": "/components/lin-ui/price/index",
+    "l-button": "/components/lin-ui/button/index",
+    "l-badge": "/components/lin-ui/badge/index",
+    "l-loading": "/components/lin-ui/loading/index",
+    "l-popup": "/components/lin-ui/popup/index",
+    "l-segment": "/components/lin-ui/segment/index",
+    "l-segment-item": "/components/lin-ui/segment-item/index",
+    "l-slide-view": "/components/lin-ui/slide-view/index",
+    "l-icon": "/components/lin-ui/icon/index",
+    "l-search-bar": "/components/lin-ui/search-bar/index",
+    "l-status-show": "/components/lin-ui/status-show/index",
+    "l-tag": "/components/lin-ui/tag/index",
+    "s-checkbox": "/components/checkbox/index",
+    "l-loadmore": "/components/lin-ui/loadmore/index",
+    "s-spu-preview": "/components/spu-preview/index",
+    "s-address": "/components/address/index",
+    "l-avatar": "/components/lin-ui/avatar/index",
+    "s-spu-preview-r": "/components/spu-preview-r/index",
+    "s-order-sku-item": "/components/order-sku-item/index",
+    "l-dialog": "/components/lin-ui/dialog/index",
+    "l-list": "/components/lin-ui/list/index",
+    "s-empty": "/components/empty/index",
+    "s-coupon-mini": "/components/coupon-mini/index",    
+    "s-empty-screen": "/components/empty-screen/index",
+    "s-coupon": "/components/coupon/index",
+    "s-spu-preview-h": "/components/spu-preview-h/index"
+  }
 }
