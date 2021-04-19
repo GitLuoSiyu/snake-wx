@@ -1,11 +1,23 @@
 // pages/home/home.js
 
-import {Theme} from "../../models/theme";
-import {Banner} from "../../models/banner";
-import {Category} from "../../models/category";
-import {Activity} from "../../models/activity";
-import {SpuPaging} from "../../models/spu-paging";
-import {CouponCenterType} from "../../core/enum";
+import {
+    Theme
+} from "../../models/theme";
+import {
+    Banner
+} from "../../models/banner";
+import {
+    Category
+} from "../../models/category";
+import {
+    Activity
+} from "../../models/activity";
+import {
+    SpuPaging
+} from "../../models/spu-paging";
+import {
+    CouponCenterType
+} from "../../core/enum";
 
 Page({
 
@@ -15,7 +27,39 @@ Page({
     data: {
         themeA: null,
         themeE: null,
-        bannerB: null,
+        bannerB: {
+            "id": 2,
+            "name": "b-2",
+            "description": "热销商品banner",
+            "img": "http://i2.sleeve.7yue.pro/m4.png",
+            "title": null,
+            "items": [
+                {
+                    "id": 5,
+                    "img": "http://i2.sleeve.7yue.pro/m6.png",
+                    "keyword": "28",
+                    "type": 1,
+                    "name": "left",
+                    "banner_id": 2
+                },
+                {
+                    "id": 6,
+                    "img": "http://i2.sleeve.7yue.pro/m7.png",
+                    "keyword": "26",
+                    "type": 1,
+                    "name": "right-top",
+                    "banner_id": 2
+                },
+                {
+                    "id": 7,
+                    "img": "http://i2.sleeve.7yue.pro/m8.png",
+                    "keyword": "27",
+                    "type": 1,
+                    "name": "right-bottom",
+                    "banner_id": 2
+                }
+            ]
+        },
         grid: [],
         activityD: null,
         spuPaging: null,
@@ -23,8 +67,8 @@ Page({
     },
 
     async onLoad(options) {
-        this.initAllData()
-        this.initBottomSpuList()
+        // this.initAllData()
+        // this.initBottomSpuList()
     },
 
     async initBottomSpuList() {
@@ -34,10 +78,7 @@ Page({
         if (!data) {
             return
         }
-
         wx.lin.renderWaterFlow(data.items)
-
-
     },
 
     async initAllData() {
@@ -85,18 +126,18 @@ Page({
         })
     },
 
-  onGoToTheme(event) {
-    const tName = event.currentTarget.dataset.tname
-    wx.navigateTo({
-      url: `/pages/theme/theme?tname=${tName}`
-    })
-  },
+    onGoToTheme(event) {
+        const tName = event.currentTarget.dataset.tname
+        wx.navigateTo({
+            url: `/pages/theme/theme?tname=${tName}`
+        })
+    },
 
-  onGoToBanner(event) {
-    const keyword = event.currentTarget.dataset.keyword
-    const type = event.currentTarget.dataset.type
-    Banner.gotoTarget(type, keyword)
-  },
+    onGoToBanner(event) {
+        const keyword = event.currentTarget.dataset.keyword
+        const type = event.currentTarget.dataset.type
+        Banner.gotoTarget(type, keyword)
+    },
 
     onReachBottom: async function () {
         const data = await this.data.spuPaging.getMoreData()
@@ -120,5 +161,3 @@ Page({
 
     }
 })
-
-
